@@ -62,7 +62,7 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        // Поиск и активация кнопки для копирования реферальной ссылки
         driver.findElement(By.cssSelector
                 ("#__layout > div > main > div > div:nth-child(3) > div.light-page-widget__body > div > div > div > button:nth-child(2) > svg"))
                 .click();
@@ -72,7 +72,7 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        // Имплементация кода для работы с буфером памяти компьютера
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         try {
             Object data = clipboard.getData(DataFlavor.stringFlavor);
